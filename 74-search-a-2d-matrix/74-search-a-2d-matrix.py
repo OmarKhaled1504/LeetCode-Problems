@@ -6,9 +6,7 @@ class Solution(object):
         :rtype: bool
         """
         for i in matrix:
-            if i[0] == target:
-                return True
-            elif target==i[len(i)-1] == target:
+            if i[0] == target or target==i[len(i)-1]:
                 return True
             elif target>i[0] and target<i[len(i)-1]:
                     for j in i:
