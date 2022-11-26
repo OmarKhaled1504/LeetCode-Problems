@@ -1,10 +1,5 @@
-class Solution(object):
-    def longestCommonSubsequence(self, text1, text2):
-        """
-        :type text1: str
-        :type text2: str
-        :rtype: int
-        """
+class Solution:
+    def longestCommonSubsequence(self, text1: str, text2: str) -> int:
         import numpy as np
         c=np.zeros((len(text1)+1,len(text2)+1))
    
