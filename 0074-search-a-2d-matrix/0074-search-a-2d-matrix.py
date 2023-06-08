@@ -1,7 +1,7 @@
 import numpy as np
 class Solution:
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
-        newlist = np.array(matrix).ravel()
+        newlist = np.array(matrix).flatten()
         l,r = 0, len(newlist) - 1
         while(l<=r):
             med = (l+r)//2
